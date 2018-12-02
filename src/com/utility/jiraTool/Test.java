@@ -18,18 +18,19 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		String https_url = "http://localhost:8080/rest/api/latest/issue/JIR-1";
+		//localhost:8080/rest/api/latest/issue/JIR-1
+		String https_url = "https://www.google.com/";
 		URL url;
 		try {
 			url = new URL(https_url);
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			
-			String userName="***********";
+			/*String userName="***********";
 			String password="xxxx";
 			String credentials=userName+":"+password;
 			String basicAuth="Basic " + new String(Base64.getEncoder().encode(credentials.getBytes()));
 			System.out.println("Basic Authentication : "+basicAuth);
-			con.setRequestProperty("Authorization", basicAuth);
+			con.setRequestProperty("Authorization", basicAuth);*/
 			String dataRetrieved="";
 			if (con != null) {
 				System.out.println("Connection established successfully");
