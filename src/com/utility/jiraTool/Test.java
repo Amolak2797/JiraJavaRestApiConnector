@@ -1,4 +1,4 @@
-package com.anthem.jiraTool;
+package com.utility.jiraTool;
 
 import java.awt.Desktop;
 import java.io.BufferedReader;
@@ -24,8 +24,8 @@ public class Test {
 			url = new URL(https_url);
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			
-			String userName="Amolak2797";
-			String password="jira123";
+			String userName="***********";
+			String password="xxxx";
 			String credentials=userName+":"+password;
 			String basicAuth="Basic " + new String(Base64.getEncoder().encode(credentials.getBytes()));
 			System.out.println("Basic Authentication : "+basicAuth);
